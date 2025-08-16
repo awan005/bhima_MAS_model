@@ -1,0 +1,1 @@
+ETRefAverage_segments, precipEffectiveAverage_segments

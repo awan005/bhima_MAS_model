@@ -1,0 +1,1 @@
+irrigatedArea_original, reservoir_command_areas, resYear, gwdepth_difference_sim_obs, permeability, relaxGWagent, waterBodyTyp, adminSegments, resVolumeOnlyReservoirs, waterBodyID, cellArea, modflowtotalSoilThickness, GeneralCrop_Irr, GeneralCrop_nonIrr, modflow_watertable
