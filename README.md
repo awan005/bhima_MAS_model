@@ -1,19 +1,21 @@
-Coupled multi-agent systems model for the Bhima basin, India
+# Coupled multi-agent systems model for the Bhima basin, India
 
 
-Overview
+## Overview
 A coupled multi-agent systems model that integrates human-environment interactions and responses to future drought, population, and economic conditions in the Bhima basin, India. The model evaluates policy options for addressing future urban freshwater insecurity in the Pune agglomeration.
 
 
-Key Features:
-•	Integrates CWatM, urban, farmers profit-optimization and agricultural water use simulation code
-•	Runs for both historical and future periods
-•	Includes different future climate change and socio-economic development scenarios 
-•	Evaluates a suite of policy interventions developed for the Pune agglomeration 
+## Key Features:
+- Integrates CWatM, urban, farmers profit-optimization and agricultural water use simulation code
+- Runs for both historical and future periods
+- Includes different future climate change and socio-economic development scenarios
+- Evaluates a suite of policy interventions developed for the Pune agglomeration 
 
 
-Quick Start
-Installation
+## Quick Start
+
+### Installation
+```
 # Get the repository 
 # ... copy files 
 
@@ -22,17 +24,19 @@ conda env create -f py38_bhima_requirement.yml
 
 # Activate environment
 conda activate py38_bhima
+```
 
-
-Usage
+### Usage
+```
 # Submit a batch job using SLURM to run historical and all interventions under scenario1
 sbatch run_model_scenario1.sbatch
 
 # Or directly run the historical case with Python 
 python integrated_model_run.py -p 1 n output_folder
+```
 
-
-Project Structure
+### Project Structure
+```
 .
 ├── README.md                         
 ├── basepath_file.py
@@ -56,26 +60,26 @@ Project Structure
 ├── OUT_MAP_MonthEnd.txt         # output monthly end variables
 ├── OUT_MAP_MonthTot.txt         # output monthly total variables
 └── OUT_MAP_TotalEnd.txt         # output total end variables
+```
+
+### Key Model Inputs:
+- Hydrological model inputs  ```modules/hydro/hydro_inputs```
+- Farmer and Agricultural module inputs  ```modules/ag_seasonal/ag_inputs```
+- Urban module inputs  ```modules/urban_module/Inputs```
+- Socio-economic development scenario inputs ```modules/urban_module/Inputs & modules/urban_module/urban_growth_files```
+- Climate change scenario inputs ```modules/hydro/hydro_inputs/meteo/GCM```
 
 
-Key Model Inputs:
-•	Hydrological model inputs  modules/hydro/hydro_inputs
-•	Farmer and Agricultural module inputs  modules/ag_seasonal/ag_inputs
-•	Urban module inputs  modules/urban_module/Inputs
-•	Socio-economic development scenario inputs modules/urban_module/Inputs & modules/urban_module/urban_growth_files
-•	Climate change scenario inputs modules/hydro/hydro_inputs/meteo/GCM
+### Key Model Outputs:
+- Reservoir storage level
+- Groundwater depth
+- River discharge
+- Urban water use (source-wise)
+- Agricultural water use (source-wise)
 
 
-Key Model Outputs:
-•	Reservoir storage level
-•	Groundwater depth
-•	River discharge
-•	Urban water use (source-wise)
-•	Agricultural water use (source-wise)
-
-
-Configuration:
-•	Design simulation run with different scenarios and interventions  model_run_ak_urban.xlsx
-•	Parameters for each scenario and intervention  scenario_intervention_parameters_urban.xlsx
+### Configuration:
+- Design simulation run with different scenarios and interventions  ```model_run_ak_urban.xlsx```
+- Parameters for each scenario and intervention  ```scenario_intervention_parameters_urban.xlsx```
 
 
