@@ -25,7 +25,7 @@ conda env create -f py38_bhima_requirement.yml
 # Activate environment
 conda activate py38_bhima
 
-# Import input files
+# Import files
 # Import folder “HydroTest_2021-11-01_v2” to be under the directory: modules/hydro/hydro_outputs/HydroTest_2021-11-01_v2/
 # The folder and file can be downloaded via this link: https://drive.google.com/drive/folders/12Wm_dXWd7jg37RlHl4oZtAnTseSwe5w6?usp=sharing 
 ```
