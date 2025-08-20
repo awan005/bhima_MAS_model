@@ -122,7 +122,7 @@ class MunicipalCorporation(PuneInstitution):
         # CK201118: -3
         print("\nTotal piped supply (m3/month): " + str(sum(a.piped_consumption * a.units for a in _all_hhs)))
         print("Total piped expenditure (INR/month): " + str(sum(a.piped_expenditure * a.units for a in _all_hhs)))
-        print("Unsatisfied agents left for piped water supply: " + str(len(self.unsatisfied_hhs_piped)))
+        # print("Unsatisfied agents left for piped water supply: " + str(len(self.unsatisfied_hhs_piped)))
 
 
     def pump_groundwater(self, year, electricity_price_factor, demand_factor):

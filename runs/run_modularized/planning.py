@@ -140,7 +140,7 @@ class planningstage(object):
             solar_input = dic[simulationID]['intervention'].loc['solar_input'][0]
             
         # create folder for each simulation 
-        name_path = basepath + r'/modules/hydro' + '/' + name
+        name_path = basepath + r'/outputs/data_raw' + '/' + name
         filepath_planning = name_path + '/' + 'hydro_outputs_' + simulationID 
         if not os.path.exists(filepath_planning):
             os.makedirs(filepath_planning)

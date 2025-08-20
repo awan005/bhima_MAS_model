@@ -142,7 +142,7 @@ class implementationstage(object):
         else:
             solar_input = dic[simulationID]['intervention'].loc['solar_input'][0]
         
-        name_path = basepath + r'/modules/hydro' + '/' + name
+        name_path = basepath + r'/outputs/data_raw' + '/' + name
         filepath_sim = name_path + '/' + 'hydro_outputs_' + simulationID
         filepath_planning = filepath_sim + '/planning_y' + str(count_imple + 1)
         filepath_implementation = filepath_sim + '/implementation_y' + str(count_imple + 1)
