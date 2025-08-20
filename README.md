@@ -1,7 +1,4 @@
 # Coupled multi-agent systems model for the Bhima basin, India
-
-
-## Overview
 A coupled multi-agent systems model that integrates human-environment interactions and responses to future drought, population, and economic conditions in the Bhima basin, India. The model evaluates policy options for addressing future urban freshwater insecurity in the Pune agglomeration.
 
 
