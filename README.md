@@ -5,7 +5,7 @@
 A coupled multi-agent systems model that integrates human-environment interactions and responses to future drought, population, and economic conditions in the Bhima basin, India. The model evaluates policy options for addressing future urban freshwater insecurity in the Pune agglomeration.
 
 
-## Key Features:
+## Key Features
 - Integrates CWatM, urban, farmers profit-optimization and agricultural water use simulation code
 - Runs for both historical and future periods
 - Includes different future climate change and socio-economic development scenarios
@@ -88,6 +88,7 @@ python integrated_model_run.py -p 1 n output_folder
 
 
 ### Reproduce All the Figures
+The following files can then be used to reproduce the figures in the main text and in the supplementary material:
 |Figure  | Notebooks & Excel files  | 
 |---------  | --------- |  
 |Figure 2  | figure2_ssp_rcp_scenarios.xlsx   |         

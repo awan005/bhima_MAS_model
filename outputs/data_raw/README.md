@@ -1,4 +1,7 @@
-This folder is a placeholder for raw data generated from designed simulations combining scenario sets and intervention portfolios, and simulations for strategic implementation of interventions
+This folder contains raw data generated from simulations, including:
+- Scenario set × intervention portfolio combinations  
+- Simulations for strategic implementation of interventions
+
 
 
 
