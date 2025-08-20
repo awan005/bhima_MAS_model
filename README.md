@@ -11,10 +11,7 @@ A coupled multi-agent systems model that integrates human-environment interactio
 - Includes different future climate change and socio-economic development scenarios
 - Evaluates a suite of policy interventions developed for the Pune agglomeration 
 
-
-## Quick Start
-
-### Installation
+## Installation
 ```
 # Get the repository 
 # ... copy files 
@@ -30,7 +27,7 @@ conda activate py38_bhima
 # The folder and file can be downloaded via this link: https://drive.google.com/drive/folders/12Wm_dXWd7jg37RlHl4oZtAnTseSwe5w6?usp=sharing 
 ```
 
-### Usage
+## Usage
 ```
 # Submit a batch job using SLURM to run historical case and all interventions under scenario1
 sbatch run_model_scenario1.sbatch
@@ -39,7 +36,7 @@ sbatch run_model_scenario1.sbatch
 python integrated_model_run.py -p 1 n output_folder
 ```
 
-### Project Structure
+## Project Structure
 ```
 .
 ├── README.md                         
@@ -68,7 +65,7 @@ python integrated_model_run.py -p 1 n output_folder
 └── figures                      # notebooks & excel files to reproduce figures
 ```
 
-### Key Model Inputs
+## Key Model Inputs
 - Hydrological model inputs  ```modules/hydro/hydro_inputs```
 - Farmer and Agricultural module inputs  ```modules/ag_seasonal/ag_inputs```
 - Urban module inputs  ```modules/urban_module/Inputs```
@@ -76,18 +73,18 @@ python integrated_model_run.py -p 1 n output_folder
 - Climate change scenario inputs ```modules/hydro/hydro_inputs/meteo/GCM```
 
 
-### Configuration 
+## Configuration 
 - Design simulation run with different scenarios and interventions  ```model_run_ak_urban.xlsx```
 - Parameters for each scenario and intervention  ```scenario_intervention_parameters_urban.xlsx```
 
 
-### Generate Outputs
+## Generate Outputs
 - Raw data output
 - Data processing scripts
 - Processed data output
 
 
-### Reproduce All the Figures
+## Reproduce All the Figures
 The following files can then be used to reproduce the figures in the main text and in the supplementary material:
 |Figure  | Notebooks & Excel files  | 
 |---------  | --------- |  
