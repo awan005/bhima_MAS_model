@@ -77,7 +77,7 @@ python integrated_model_run.py -p 1 n output_folder
 
 ## Generate Outputs
 - Raw data output
-- Data processing scripts
+- Data processing 
 - Processed data output
 
 
